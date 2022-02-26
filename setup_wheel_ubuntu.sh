@@ -1,6 +1,6 @@
 #!/bin/bash -e
 # Name: PyAnime4K setup script for ubuntu
-# Author: TianZerL
+# Author: TianZerL - forked 2/26/22 with much thanks to the author
 
 if [ ! -z "$1" ]; then
     export INSTALLATION_PATH=$1
@@ -10,12 +10,12 @@ fi
 
 TEMP="/tmp/pyanime4k"
 
-git clone https://github.com/TianZerL/pyanime4k.git $TEMP/pyanime4k
+git clone https://github.com/kipmadden/pyanime4k.git $TEMP/pyanime4k
 
 apt-get update
 apt install -y --no-install-recommends libopencv-dev ocl-icd-opencl-dev cmake python3-pip
 
-git clone -b v2.5.0 https://github.com/TianZerL/Anime4KCPP.git $TEMP/anime4kcpp
+git clone -b v2.5.0 https://github.com/kipmadden/Anime4KCPP.git $TEMP/anime4kcpp
 
 mkdir -v $TEMP/anime4kcpp/build
 cd $TEMP/anime4kcpp/build
