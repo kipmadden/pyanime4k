@@ -23,7 +23,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     license="MIT",
     keywords=["anime", "anime4k", "anime4kcpp", "upscale"],
-    url="https://github.com/kipmadden/pyanime4k",
+    url="https://github.com/TianZerL/pyanime4k",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
