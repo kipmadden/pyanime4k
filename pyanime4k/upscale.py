@@ -105,7 +105,7 @@ def show_upscaled_image(
 
 def upscale_images(
     input_paths: list,
-    output_suffix: str = "_output",
+    output_suffix: str = "_4k",
     output_path: pathlib.Path = None,
     parameters: Parameters = Parameters(),
     GPU_mode: bool = False,
